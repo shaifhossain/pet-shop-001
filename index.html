@@ -1,28 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet-shop</title>
+  <!-- daisy ui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font section -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+  <style>
+    .adlam-display-regular {
+      font-family: "ADLaM Display", serif;
+    }
+  </style>
 
 </head>
-<body>
+
+<body class="adlam-display-regular">
   <!-- header section -->
   <header>
     <!-- nav bar section -->
-     <nav>
+    <nav>
+      <div class="navbar bg-orange-50 px-10">
+        <div class="navbar-start gap-3">
 
-     </nav>
-     <!-- banner section -->
+          <img src="./c1-assets/logo-header.png" alt="">
+          <a class="text-xl">Browse<span class="text-warning">4</span>Pets</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-3 ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 hidden md:inline-block">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 hidden md:inline-block">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+
+          <button class="btn btn-outline btn-warning hidden md:inline-block">Login</button>
+          <button class="btn btn-warning hidden md:inline-block">Register</button>
+
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+    </nav>
+    <!-- banner section -->
+    <div class="relative px-4 py-8 top-10 md:px-16 md:py-16">
+      <div class="">
+        <img src="c1-assets/cat-big.png" alt="">
+      </div>
+      <div class="absolute md:top-0 space-y-5">
+        <h3 class="text-4xl font-bold">Pamper Your Pet,<br> Because They Deserve <br> the Best</h3>
+        <p class="text-gray-400">Discover a world of treats, toys, and essentials handpicked for <br> your furry
+          friends. Shop now and make tails
+          wag with
+          joy!</p>
+        <button class="btn btn-warning">Find a pet</button>
+      </div>
+
+    </div>
 
   </header>
   <!-- main section -->
   <main>
+   <!-- catagoy section -->
+    <section class="">
+      <!-- titel -->
+       <div>
+       </div>
 
+    </section>
   </main>
   <!-- footer section -->
   <footer>
 
   </footer>
 </body>
+
 </html>
